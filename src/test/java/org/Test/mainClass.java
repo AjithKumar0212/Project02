@@ -9,6 +9,7 @@ public class mainClass extends BaseClass {
 @Test
 private void t2() throws InterruptedException {
 System.out.println("yes");
+System.out.println("[__]");
 System.out.println("Nope");
 System.out.println("yezz");
 launchBrowser("chrome");
