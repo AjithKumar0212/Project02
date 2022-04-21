@@ -8,7 +8,9 @@ import org.testng.annotations.Test;
 public class mainClass extends BaseClass {
 @Test
 private void t2() throws InterruptedException {
+System.out.println("yezz");
 System.out.println("Nope");
+
 launchBrowser("chrome");
 launchUrl("https://www.flipkart.com");
 FirstPage f=new FirstPage();
