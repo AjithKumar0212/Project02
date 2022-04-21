@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 public class mainClass extends BaseClass {
 @Test
 private void t2() throws InterruptedException {
+System.out.println("yes");
+System.out.println("Nope");
+System.out.println("yezz");
 System.out.println("1234");
 System.out.println("foggy");
 launchBrowser("chrome");
