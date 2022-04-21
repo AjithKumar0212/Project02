@@ -9,10 +9,6 @@ public class mainClass extends BaseClass {
 @Test
 private void t2() throws InterruptedException {
 System.out.println("yes");
-System.out.println("2sw");
-System.out.println("yezz");
-System.out.println("1234");
-System.out.println("foggy");
 launchBrowser("chrome");
 launchUrl("https://www.flipkart.com");
 FirstPage f=new FirstPage();
