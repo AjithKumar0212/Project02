@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">218,575</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">28,631</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">3</th><th class="num">247,206</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.parallel.Fb</td><td><a href="#m0">t2</a></td><td rowspan="1">1649991012118</td><td rowspan="1">218476</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.parallel.Fb</td><td><a href="#m1">t1</a></td><td rowspan="1">1649991012115</td><td rowspan="1">206117</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.parallel.Fb</td><td><a href="#m2">t1</a></td><td rowspan="1">1649991230686</td><td rowspan="1">27179</td></tr><tr class="failedeven"><td><a href="#m3">t2</a></td><td rowspan="1">1649991230688</td><td rowspan="1">28621</td></tr></tbody>
+</table>
+<h2>Test1</h2><h3 id="m0">org.parallel.Fb#t2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pass&quot;}
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AJITH&apos;, ip: &apos;192.168.0.113&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\AJITHM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59555}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 29e639cd111e2338f3f08b9b1195f4d9
+*** Element info: {Using=id, value=pass}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.Base.BaseClass.findElements(BaseClass.java:123)
+	at org.parallel.Fb.t2(Fb.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.parallel.Fb#t1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m2">org.parallel.Fb#t1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: MSEdge failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from msedge location C:\Program Files\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AJITH&apos;, ip: &apos;192.168.0.113&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00C2ABF3+57891]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B07E91+1418945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x008F43DE+3470]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00910683+44451]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0090CA19+28985]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00936F48+202344]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0093696E+200846]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00931E06+181542]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x009150D6+63478]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00915E66+66950]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B224B5+1527013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAC1A2+117554]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DABE47+116695]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAFF00+133264]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAC88C+119324]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B19F27+1492823]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B24D28+1537368]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B24EB2+1537762]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B36692+1609410]
+	BaseThreadInitThunk [0x7739173E+18]
+	LdrInitializeThunk [0x77700409+593]
+	LdrInitializeThunk [0x777003B5+509]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at org.Base.BaseClass.launchBrowser(BaseClass.java:51)
+	at org.parallel.Fb.t1(Fb.java:13)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.parallel.Fb#t2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: MSEdge failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from msedge location C:\Program Files\Microsoft\Edge\Application\msedge.exe is no longer running, so MSEdgeDriver is assuming that MSEdge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AJITH&apos;, ip: &apos;192.168.0.113&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x00C2ABF3+57891]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B07E91+1418945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x008F43DE+3470]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00910683+44451]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0090CA19+28985]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00936F48+202344]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0093696E+200846]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00931E06+181542]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x009150D6+63478]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00915E66+66950]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B224B5+1527013]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAC1A2+117554]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DABE47+116695]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAFF00+133264]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00DAC88C+119324]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B19F27+1492823]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B24D28+1537368]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B24EB2+1537762]
+	Microsoft::Applications::Events::ISemanticContext::SetCommonField [0x00B36692+1609410]
+	BaseThreadInitThunk [0x7739173E+18]
+	LdrInitializeThunk [0x77700409+593]
+	LdrInitializeThunk [0x777003B5+509]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at org.Base.BaseClass.launchBrowser(BaseClass.java:51)
+	at org.parallel.Fb.t2(Fb.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
